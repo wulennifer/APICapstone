@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='utf-8' name='description' content='Find the perfect fur-ever friend for you.'>
+    <meta name='viewport' content='width=device-width'>
+    <title>Lennifer's Fur Finder</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  
+    <!--Google Fonts-->
+</head>
+<body>
+	<header>
+		
+	</header>
+	<div class='container'>
+		<div class='landing-page'>
+			<form action='#' name='zipcode-search' class='search'>
+				<label for='search-zipcode'>
+					Where are you looking for your furry friend?
+				</label>
+				<input type='text' name='zipcode' id='search-zipcode' required/>
+				<button type='submit'>Search</button>
+			</form>
+		</div>
+
+	
+		<main role='main' class='js-output' aria-live='assertive' hidden>
+			<!--Rescue results will go here-->
+			<section class='map'>
+				<!--Google Maps will go here-->
+			</section>
+
+			<section class='filter'>
+				<div class='dropdown' id='animal-dropdown'>
+					<button class='dropbtn'>Animal</button>
+					<input type='text' placeholder='Search...' id='animal-type'>
+				</div>
+				<div class='dropdown' id='gender-dropdown'>
+					<button class='dropbtn'>Gender</button>
+				</div>
+				<div class='dropdown' id='age-dropdown'>
+					<button class='dropbtn'>Age</button>
+				</div>
+				<div class='dropdown' id='size-dropdown'>
+					<button class='dropbtn'>Size</button>
+				</div>
+				<div class='dropdown' id='breed-dropdown'>
+					<button class='dropbtn'>Breed</button>
+					<input type='text' placeholder='Search...' id='breed-type'>
+				</div>
+				<button type='submit'>Filter</button>
+			</section>
+
+			<section class='rescue-results'>
+				<!--Available rescues will appear here-->
+			</section>
+		</main>
+	</div>
+
+	<!--Scripts-->
+    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type='text/javascript' src='index.js'></script>
+</body>
+</html>
