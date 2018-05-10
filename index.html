@@ -17,7 +17,7 @@
 		
 	</header>
 	<div class='container'>
-		<div class='location-form'>
+		<div class='landing-page'>
 			<form action='#' name='zipcode-search' class='search'>
 				<label for='search-zipcode'>
 					Where are you looking for your furry friend?
@@ -28,14 +28,10 @@
 		</div>
 
 	
-		<main role='main' class='results-output' aria-live='assertive'>
+		<main role='main' class='js-output' aria-live='assertive'>
 			<!--Rescue results will go here-->
 			<section class='map' id='map'>
 				<!--Google Maps will go here-->
-			</section>
-
-			<section id='shelter-results' class='shelter-results'> 
-				<!--Available rescues will appear here-->
 			</section>
 
 			<!--<section class='filter'>
@@ -90,15 +86,17 @@
 				
 				<button type='submit'>Filter</button>
 			</section>-->
+
+			<section class='shelter-results'> 
+				<!--Available rescues will appear here-->
+			</section>
 		</main>
 	</div>
 
 	<!--Scripts-->
 	<script type='text/javascript' src='index.js'></script>
     
-  	<script 
-  		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF7QvTB30q44YdyF3DTGQMaMfZZfIWhr0&callback=initMap"
-    	async defer>
-  	</script>   
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF7QvTB30q44YdyF3DTGQMaMfZZfIWhr0&callback=initMap"
+    async defer></script>   
 </body>
 </html>
