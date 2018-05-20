@@ -8,10 +8,13 @@ This project uses the Petfinder and Google Maps API to create an application tha
 * Learning how to work with multiple APIs
 
 ## Screenshots
-> insert screenshots
+
+![shelter search](https://github.com/wulennifer/FurFinder/blob/master/Screenshots/Screenshot01.PNG)
+![pet search](https://github.com/wulennifer/FurFinder/blob/master/Screenshots/Screenshot02.PNG)
 
 ## Demo
-> insert live link here
+
+https://wulennifer.github.io/FurFinder/
 
 ## Features
 * Search for shelters based off of a zipcode location
