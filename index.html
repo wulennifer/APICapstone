@@ -11,87 +11,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
   
     <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 </head>
 <body>
-	<header>
-		
-	</header>
-	<div class='container'>
-		<div class='landing-page'>
-			<form action='#' name='zipcode-search' class='search'>
-				<label for='search-zipcode'>
-					Where are you looking for your furry friend?
-				</label>
-				<input type='text' name='zipcode' id='search-zipcode' required/>
-				<button type='submit' class='submitButton'>Search</button>
-			</form>
-		</div>
+  <header role='banner' class='header'>
+    <h1>Fur Finder</h1>
+  </header>
+  <div class='container'>
+    <div class='landing-page'>
+      <form action='#' name='zipcode-search' class='search'>
+        <label for='search-zipcode'>
+          Where are you looking for your furry friend?
+        </label>
+        <input type='text' name='zipcode' id='search-zipcode' required/>
+        <button type='submit' class='submitButton'>Search</button>
+      </form>
+    </div>
+  
+    <main role='main' class='js-output' aria-live='assertive'>
+      <section class='map' id='map'>
+        <!--Google Maps will go here-->
+      </section>
 
-	
-		<main role='main' class='js-output' aria-live='assertive'>
-			<!--Rescue results will go here-->
-			<section class='map' id='map'>
-				<!--Google Maps will go here-->
-			</section>
+      <section role='contentinfo' class='shelter-results'> 
+        <!--Available rescues will appear here-->
+      </section>
+    </main>
+  </div>
 
-			<!--<section class='filter'>
-				<div class='dropdown'>
-					<button class='dropbtn'>Animal</button>
-					<div id='animal-dropdown' class='dropdownContent'>
-					  <input type='text' placeholder='Search...' id='animal-type'>
-					  <a href='#'>Barnyard</a>
-					  <a href='#'>Bird</a>
-					  <a href='#'>Cat</a>
-					  <a href='#'>Dog</a>
-					  <a href='#'>Horse</a>
-					  <a href='#'>Reptile</a>
-					  <a href='#'>Smallfurry</a>
-					</div>
-				</div>
-				
-				<div class='dropdown'>
-					<button class='dropbtn'>Gender</button>
-					<div id='gender-dropdown' class='dropdownContent'>
-					  <a href='#'>Female</a>
-					  <a href='#'>Male</a>
-					</div>
-				</div>
-				
-				<div class='dropdown'>
-					<button class='dropbtn'>Age</button>
-					<div id='age-dropdown' class='dropdownContent'>
-					  <a href='#'>Baby</a>
-					  <a href='#'>Young</a>
-					  <a href='#'>Adult</a>
-					  <a href='#'>Senior</a>
-					</div>
-				</div>
-				
-				<div class='dropdown'>
-					<button class='dropbtn'>Size</button>
-					<div id='size-dropdown' class='dropdownContent'>
-					  <a href='#'>Small</a>
-					  <a href='#'>Medium</a>
-					  <a href='#'>Large</a>
-					  <a href='#'>Extra Large</a>
-					</div>
-				</div>
-				
-				<div class='dropdown'>
-					<button class='dropbtn'>Breed</button>
-					<div id='breed-dropdown' class='dropdownContent'>
-					  <input type='text' placeholder='Search...' id='breed-type'>
-					</div>
-				</div>
-				
-				<button type='submit'>Filter</button>
-			</section>-->
-
-			<section class='shelter-results'> 
-				<!--Available rescues will appear here-->
-			</section>
-		</main>
-	</div>
 
 	<!--Scripts-->
 	<script type='text/javascript' src='index.js'></script>
