@@ -1,7 +1,8 @@
 body {
   box-sizing: border-box;
   font-family: 'Playfair Display', serif;
-  background: white;
+  background-image: url("https://i.imgur.com/xvzwXtu.jpg");
+  background-repeat: repeat;
 }
 
 .landing-page {
@@ -28,6 +29,14 @@ body {
   height: 100%;
   position: relative;
   z-index: 1;
+  border-radius: 50%;
+  transition: border-radius 2s ease-in-out;
+  -webkit-transition: border-radius 2s ease-in-out;
+}
+
+.map-transition {
+  transition: border-radius 2s ease-in-out;
+  border-radius: 0;
 }
 
 main {
@@ -38,7 +47,7 @@ main {
 .modal {
   position: fixed;
   display: none;  /*Hidden by default */
-  background: #757575;
+  background-image: url('https://i.imgur.com/L8SFs6y.png');
   z-index: 1; /* Sit on top */
   top: 15%;
   left: 2%;
@@ -80,7 +89,6 @@ main {
   -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
-  border-radius: 10%;
 }
 
 .modal-header h2 {
@@ -91,15 +99,15 @@ main {
 .modal-header {
   position: inherit;
   width: 96%;
-  background-color: #DBDBDB;
+  background-image: url('https://i.imgur.com/LV2B9eB.png');
   color: #363636;
 }
 
 .shelter-results {
-  background-color: #000;
+  background-image: url('https://i.imgur.com/L8SFs6y.png');
   overflow: auto;
   white-space: nowrap;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-size: 0;
 }
 
@@ -152,6 +160,7 @@ h3 {
 .pet-container img {
   max-width: auto;
   height: 160px;
+  border-radius: 1%;
 }
 
 .pet-container {
@@ -199,7 +208,7 @@ h3 {
 
 @media only screen and (min-width: 900px) {
   .modal {
-    top: 23%;
+    top: 20%;
     left: 9.5%;
     width: 80%
   }
@@ -209,13 +218,15 @@ h3 {
   }
 
   .container {
-    margin: 27px 100px 100px;
+    margin: 0px 100px 100px;
   }
 
   .map {
     margin: 20px 0 20px;
     width: 100%;
     height: 100%;
+    transition: border-radius 2s ease-in-out;
+    -webkit-transition: border-radius 2s ease-in-out;
   }
 
   main {
@@ -228,6 +239,7 @@ h3 {
   }
 
   header h1 {
-    font-size: 50px;
+    font-size: 45px;
+    margin: 8px;
   }
 }
